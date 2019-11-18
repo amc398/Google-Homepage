@@ -1,23 +1,113 @@
-ul {
+ body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+.centered {
+    padding: 100px 0;
+    text-align: center;
+  }
+
+.topbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: white;
-  }
-  
-  li 
-  {
+}
+
+.topbar li {
   float: left; 
+  font-size: 13px;
+}
 
-  } 
-
-  
-  
-  li a {
+.topbar li a {
     display: block;
-    color: black;
+    color: rgb(105, 105, 105);
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px 12px;
     text-decoration: none;
   }
+
+.topbar li a:hover {
+    text-decoration: underline;
+}
+
+.bottombar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width: 100%;
+}
+
+.bottombar a {
+    float: left;
+    display: block;
+    color: #636363;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  
+.bottombar li {
+    float: left; 
+    font-size: 13px;
+}
+  
+.bottombar li a {
+    display: block;
+    color: rgb(114, 113, 113);
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+  }
+
+.bottombar li a:hover {
+    text-decoration: underline;
+  }
+
+.SearchBox input{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d3d3d3;
+    border-radius: 50px;
+    width: 37%;
+    padding: 15px 20px;
+    margin: 25px 0;
+    outline: none;
+  }
+
+.SearchBox:hover input{
+    position: relative;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .2);
+    background: white;
+}
+
+.SearchButtons{
+    display: inline;
+    padding: 20px 20px 20px 20px; 
+   
+    outline: none;
+    text-align:left;
+}
+
+.SearchButtons input{
+    font-size: 14px;
+    color:rgb(105, 105, 105);
+    padding:10px 18px 10px 18px;
+    background: rgb(241, 241, 241);
+    border-width:0px;
+    border-radius:5px;
+    margin: 10px 6px;
+}
+
+ .SearchButtons:hover input{
+    position: relative;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(141, 141, 141, 0.678);
+}
